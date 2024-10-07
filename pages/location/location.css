@@ -1,0 +1,138 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.image {
+    position: relative;
+    margin-bottom: 10px; 
+    margin-left: 800px;
+}
+
+.image img {
+    width: 200px;
+    height: 200px;
+    opacity: 0.3; 
+    transition: opacity 0.3s;
+}
+
+.image:hover img {
+    opacity: 1; 
+}
+
+.info {
+    display: none;
+    position: absolute;
+    left: 120px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.additional-image {
+    margin-left: 20px;
+}
+
+.vertical-line {
+    position: absolute;
+    left: 80%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #ffffff;
+}
+
+.scroll-button {
+    position: absolute;
+    left: 80%;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+.entry-text {
+    position: absolute;
+    width: 151px;
+    left: calc(100% + 10px); 
+    top: 20%; 
+    font-family: 'Cormorant Garamond', serif; 
+    font-size: 48px;
+    font-style: italic;
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+    pointer-events: none; 
+}
+
+.image:focus .entry-text,
+.image:hover .entry-text {
+    opacity: 1; 
+    pointer-events: auto; 
+}
+
+.second-text {
+    position: absolute;
+    width: 154px;
+    left: calc(100% + 10px); 
+    top: 20%; 
+    font-family: 'Cormorant Garamond', serif; 
+    font-size: 48px;
+    font-style: italic;
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+    pointer-events: none; 
+}
+
+.image:focus .second-text,
+.image:hover .second-text {
+    opacity: 1; 
+    pointer-events: auto; 
+}
+
+.info-text {
+    position: absolute;
+    width: 312px;
+    left: -450px; 
+    top: 30%; 
+    font-family: 'Source Code Pro', serif; 
+    font-size: 20px;
+    font-style: regular;
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+    pointer-events: none; 
+}
+
+.image:focus .info-text,
+.image:hover .info-text {
+    opacity: 1; 
+    pointer-events: auto; 
+}
+
+.third-text {
+    position: absolute;
+    width: 154px;
+    left: calc(100% + 10px); 
+    top: 20%; 
+    font-family: 'Cormorant Garamond', serif; 
+    font-size: 48px;
+    font-style: italic;
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+    pointer-events: none; 
+}
+
+.image:focus .third-text,
+.image:hover .third-text {
+    opacity: 1; 
+    pointer-events: auto; 
+}
+

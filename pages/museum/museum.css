@@ -1,0 +1,212 @@
+.back{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: -8%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.d-card {
+    width: 447px;
+    height: 250px;
+    background-color: rgba(43, 41, 43, 0.6);
+
+    border-radius: 20px;
+    padding: 14px 25px 32px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.d-card:hover {
+    z-index: 12;
+    transform: translate(0, -20px);
+}
+
+.d-card.center {
+    z-index: 10;
+    transform: translate(-52px, 133px);
+}
+
+.d-card.center:hover {
+    transform: translate(-52px, 113px);
+}
+
+.d-card.center ~ .d-card {
+    transform: translate(-104px);
+    z-index: 2;
+}
+
+.d-card.center ~ .d-card:hover {
+    transform: translate(-133px, 133px);
+}
+
+
+.d-card.sider {
+    z-index: 10;
+    transform: translate(-52px, 133px);
+}
+
+.d-card.sider:hover {
+    z-index: 12;
+    transform: translate(0, -20px);
+}
+
+.d-card.lever {
+    z-index: 10;
+    transform: translate(-52px, 133px);
+}
+
+.d-card.lever:hover {
+    transform: translate(-52px, 113px);
+}
+
+.d-card.lever ~ .d-card.sider {
+    transform: translate(-100px);
+    z-index: 2;
+}
+
+.d-card.lever ~ .d-card.sider:hover {
+    transform: translate(-104px, -20px);
+}
+
+.d-card-cover {
+    width: 184px;
+    height: 258px;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin-top: 22px;
+    margin-bottom: 10px;
+}
+
+.d-card-cover[data-cover="1"] {background-image: url("../../resourses/img/folders/unt-1.svg")}
+.d-card-cover[data-cover="2"] {background-image: url("../../resourses/img/folders/unt-2.svg")}
+.d-card-cover[data-cover="3"] {background-image: url("../../resourses/img/folders/unt-3.svg")}
+.d-card-cover[data-cover="4"] {background-image: url("../../resourses/img/folders/unt-4.svg")}
+.d-card-cover[data-cover="5"] {background-image: url("../../resourses/img/folders/unt-5.svg")}
+
+.в-card-caption {
+    font-size: 15px;
+    text-align: center;
+}
+
+.mark{
+    position: fixed;
+    z-index: 0;
+
+    width: 470px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(32, 32, 34, 0.7);
+
+    padding: 133px 43px 26px 30px;
+}
+
+.line {
+    height: 2px; 
+    background-color: white; 
+    width: 100%; 
+    margin: 120px 0; 
+    margin-left: 80px;
+}
+
+.mus-header {
+    margin-top: 100px;
+    padding-left: -40px;
+}
+
+.block {
+    margin-top: -150px;
+    margin-left: 1000px;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+
+    transition: all 0.5s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.block:hover {
+    opacity: 0.8;
+    border-bottom-color: #fff;
+}
+
+button { 
+    width: 175px;
+    height: 40px;
+    border: 2px #fff solid;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 300px;
+    pointer-events: auto;
+}
+
+button span { 
+    font-size: 20px;
+}
+
+.icon{
+    position:relative;
+    width: 100%;
+    height: 100%;
+
+    top: -40px;
+    left: 0;
+
+    transition: transform 0.3s ease;
+}
+
+.icon:hover{
+    transform: scale(1.2);
+}
+
+.icon-june{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    top: 35px;
+    left: 0;
+
+    transition: transform 0.3s ease;
+}
+
+.icon-june:hover{
+    transform: scale(1.2);
+}
+
+.icon-jun{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    top: 110px;
+    left: 0;
+
+    transition: transform 0.3s ease;
+}
+
+.icon-jun:hover{
+    transform: scale(1.2);
+}
+
+

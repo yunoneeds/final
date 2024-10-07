@@ -1,0 +1,149 @@
+
+.s-header {
+    margin-top: 58px;
+    margin-left: 129px;
+}
+
+.s-content {
+    margin-top: 180px;
+    margin-left: 480px;
+}
+
+.s-card {
+    width: 290px;
+    height: 400px;
+    background-color: rgba(43, 41, 43, 0.6);
+
+    border-radius: 20px;
+    padding: 14px 25px 32px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.s-card:hover {
+    z-index: 12;
+    transform: translate(0, -20px);
+}
+
+.s-card.center {
+    z-index: 10;
+    transform: translate(-52px, 133px);
+}
+
+.s-card.center:hover {
+    transform: translate(-52px, 113px);
+}
+
+.s-card.center ~ .s-card {
+    transform: translate(-104px);
+    z-index: 2;
+}
+
+.s-card.center ~ .s-card:hover {
+    transform: translate(-104px, -20px);
+}
+
+.s-card-title {
+    width: 100%;
+    text-align: left;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.25em;
+}
+
+.s-card-cover {
+    width: 184px;
+    height: 258px;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin-top: 22px;
+    margin-bottom: 10px;
+}
+
+.s-card-cover[data-cover="1"] {background-image: url("../../resourses/img/articles/art-1.svg")}
+.s-card-cover[data-cover="2"] {background-image: url("../../resourses/img/articles/art-2.svg")}
+.s-card-cover[data-cover="3"] {background-image: url("../../resourses/img/articles/art-3.svg")}
+
+.s-card-caption {
+    font-size: 15px;
+    text-align: center;
+}
+
+.menusec {
+    position: fixed;
+    z-index: 999;
+
+    width: 470px;
+    height: 100%;
+    top: 0;
+    right: 70%;
+    background-color: rgba(32, 32, 34, 0.7);
+
+    padding: 133px 43px 26px 30px;
+
+    transition: right 1s ease;
+}
+
+
+.menusec.open {
+    right: 0;
+}
+
+.menu-item {
+    display: block;
+    width: 100%;
+    padding: 9px 18px;
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+
+    transition: all 0.5s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.menu-item:hover {
+    opacity: 0.8;
+    border-bottom-color: #fff;
+}
+
+.backmun{
+        position: absolute;
+        left: 38%;
+        top: 30%;
+      
+        width: 607px;
+        height: 471px;
+      
+        background-image: url('../../resourses/img/muun.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      
+}
+
+.lines{
+    position: absolute;
+    left: 30%;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url('../../resourses/img/lines.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}

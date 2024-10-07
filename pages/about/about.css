@@ -1,0 +1,121 @@
+body{
+    display: flex; 
+      flex-direction: column;
+      min-height: 100vh; 
+      overflow-y: auto;
+}
+
+
+.about-text {
+    margin-top: 125px;
+    margin-left: 258px;
+}
+
+.about-row {
+    color: #fff;
+    margin-bottom: 12px;
+    padding-left: 227px;
+}
+
+.about-row .text {
+    font-size: 20px;
+    line-height: 1.2em;
+    margin-left: 25px;
+}
+
+.about-row .num {
+    font-size: 40px;
+}
+
+.about-header {
+    padding-left: 174px;
+    margin: 115px 0 67px 0;
+}
+
+.about-wrapper{
+    position: relative;
+}
+
+.about-moon {
+    width: 260px;
+    height: 260px;
+
+    position: absolute;
+    left: 128px;
+    top: 127px;
+
+    background-image: url('./resources/img/lilmon.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.about-moon:hover {
+    transform: scale(1.2);
+}
+
+.about-moon::before {
+    content: "";
+    position: absolute;
+    width: 304px;
+    height: 304px;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+    border: 2px #fff solid;
+}
+
+.about-horizontal {
+    position: absolute;
+    width: 2px;
+    height: 100vh;
+    background: #fff;
+    left: 258px;
+    top: 0;
+}
+
+.about-btn {
+    margin: 30px auto 0 auto;
+    width: 164px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px #fff solid;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.about-btn:hover {
+    background: #fff;
+}
+
+.about-btn:hover .about-link {
+    color: #111;
+}
+
+.about-link {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.upside{
+    width: 607px;
+    height: 470px;
+
+    position: absolute;
+    left: -3%;
+    top: 0;
+
+    background-image: url('../../resourses/img/upsidemoon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+  

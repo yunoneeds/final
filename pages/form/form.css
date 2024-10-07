@@ -1,0 +1,90 @@
+
+.form-moon {
+    width: 600px;
+    height: 860px;
+
+    position: absolute;
+    left: -80px;
+    top: -5px;
+
+    background-image: url('../../resourses/img/sidemoon.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.form-moon::before {
+    content: "";
+    position: absolute;
+    width: 304px;
+    height: 304px;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+    border: 2px #fff solid;
+}
+
+.form-header {
+    margin-top: 100px;
+    padding-left: 171px;
+}
+
+.form {
+    margin-left: 423px;
+    margin-top: 100px;
+}
+
+.form .col {
+    margin-bottom: 14px;
+}
+
+.form_label {
+    font-size: 20px;
+    line-height: 1em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.form-input {
+    background: transparent;
+    border: none;
+    outline: none;
+
+    width: 840px;
+    height: 58px;
+    padding: 15px;
+
+    font-size: 20px;
+    color: #fff;
+
+    border: 2px #fff solid;
+    border-radius: 10px;
+}
+
+.form button {
+    width: 175px;
+    height: 40px;
+    border: 2px #fff solid;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.form button span {
+    font-size: 20px;
+}
+
+.form-horizontal {
+    position: absolute;
+    width: 2px;
+    height: 100vh;
+    background: #fff;
+    left: 160px;
+    top: 0;
+}
