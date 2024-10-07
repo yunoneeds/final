@@ -1,0 +1,262 @@
+@import "./pages/about/about.css";
+@import './pages/archive/archive.css';
+@import './pages/form/form.css';
+@import './pages/location/location.css';
+@import './pages/museum/museum.css';
+@import './pages/philosophy/philosophy.css';
+@import './pages/science/science.css';
+@import './pages/shop/shop.css';
+
+
+@import "./resources/fonts/source-code-pro.css";
+@import './resources/fonts/cormorant.css';
+@import "./common.css";
+
+
+
+body {
+    min-height: 100vh;
+    color: #fff;
+    background: linear-gradient(180deg, rgba(31,32,34,1) 0%, rgba(84,87,94,1) 100%);
+    overflow: auto;
+    margin: 0 auto;
+}
+
+.moon {
+    width: 1700px;
+    height: 800px;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    transition: transform 0.3s ease-in-out;
+
+    background-image: url('./resourses/img/Vectary.svg');
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.moon:hover {
+    transform: scale(1.2); 
+  }
+
+.moon::before {
+    content: "";
+    position: absolute;
+    
+    width: 3000px;
+    height: 940px;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+
+    background-image: url('./resourses/img/areol.svg');
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.moon img {
+    object-position: top;
+    object-fit: cover;
+}
+
+.index-decor {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%);
+
+    width: 1356px;
+    height: 1761px;
+
+    background-image: url('./resources/img/menu-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.index-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 32px;
+    padding-bottom: 25px;
+}
+
+.index-nav_item {
+    width: 182px;
+    height: 24px;
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+
+.index-nav_item .bg {
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: 2px #fff solid;
+
+    filter: blur(2px);
+    border-radius: 50px;
+}
+
+.index-nav_item .bg span {
+    font-size: 15px;
+    line-height: 1em;
+}
+
+.index-nav_item span {
+    font-size: 14px;
+    line-height: 1em;
+}
+
+.nav-dot {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    border-radius: 50%;
+    background: #fff ;
+}
+
+.nav-dot::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    border: 2px #fff solid;
+    filter: blur(2px);
+    border-radius: 50%;
+}
+
+
+.index-header {
+    margin-top: 217px;
+    padding-left: 124px;
+}
+
+.begin {
+    margin-top: 66px; 
+}
+
+.begin-text {
+    text-decoration: underline;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.menu {
+    position: fixed;
+    z-index: 999;
+
+    width: 470px;
+    height: 100%;
+    top: 0;
+    left: 70%;
+    background-color: rgba(32, 32, 34, 0.7);
+
+    padding: 133px 43px 26px 30px;
+}
+
+.menu-item {
+    display: block;
+    width: 100%;
+    padding: 9px 18px;
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+
+    transition: all 0.5s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.menu-item:hover {
+    opacity: 0.8;
+    border-bottom-color: #fff;
+}
+
+.sides{
+  position: absolute;
+  left: 95%;
+  top: 0;
+
+  width: 23px;
+  height: 885px;
+
+  background-image: url('./resourses/img/sides.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@keyframes glow {
+    0% {
+      filter: drop-shadow(0 0 5px rgba(0, 0, 255, 0.5));
+    }
+    50% {
+      filter: drop-shadow(0 0 15px rgba(0, 0, 255, 1));
+    }
+    100% {
+      filter: drop-shadow(0 0 5px rgba(0, 0, 255, 0.5));
+    }
+  }
+  
+  .sides {
+    animation: glow 1.5s infinite;
+  }
+  
+
+.circ{
+    position: absolute;
+    left: 14%;
+    top: 200px;
+
+    width: 824px;
+    height: 399px;
+
+    background-image: url('./resourses/img/cirab.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    filter: drop-shadow(0 0 10px rgba(0, 0, 255, 0.7));
+    transition: filter 0.3s ease-in-out;
+}
+
+@keyframes glow {
+    0% {
+      filter: drop-shadow(0 0 5px rgba(0, 0, 255, 0.5));
+    }
+    50% {
+      filter: drop-shadow(0 0 15px rgba(0, 0, 255, 1));
+    }
+    100% {
+      filter: drop-shadow(0 0 5px rgba(0, 0, 255, 0.5));
+    }
+  }
+  
+  .circ {
+    animation: glow 1.5s infinite;
+  }
+  
